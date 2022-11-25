@@ -18,8 +18,9 @@ class DiscordLibrary(discord.Client):
         # we do not want the bot to reply to itself
         if message.author.id == self.user.id:
             return
-
+        
         if message.content.startswith("!euribor12"):
+            print("Got message: '"+str(message.content) + "'. Responding...")
             await message.reply(Euribor().reply_to_12_months(), mention_author=True)
 
 
