@@ -5,5 +5,6 @@
 cd /
 cd /home/pi/git/euribor-discord-bot
 source ".venv/bin/activate"
+echo $VIRTUAL_ENV
 sudo python bot.py
 cd /
