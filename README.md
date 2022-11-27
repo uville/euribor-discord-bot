@@ -45,7 +45,7 @@ sudo crontab -e
 
 Then set script to start automatically by inserting
 ```
-@reboot sh /home/pi/git/euribor-discord-bot/launcher.sh >/home/pi/git/euribor-discord-bot/logs/cronlog 2>&1
+@reboot . /home/pi/git/euribor-discord-bot/launcher.sh
 ```
 
 
